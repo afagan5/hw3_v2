@@ -1,0 +1,10 @@
+
+   <h1> Please enter the name of the new place you'd like to create here... </h1>
+   <p>
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "name" %>
+    <%= form.text_field "name" %>
+  <%= form.submit %>
+<% end %>
+</p>
