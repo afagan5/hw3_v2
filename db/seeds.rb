@@ -7,5 +7,3 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 places = Place.create([{ name: "Tamarindo, Costa Rica" }, { name: "Cabo, Mexico" }, { name: "Mexico City, Mexico" }])
-
-posts = Post.create([{ title: "Surfing!"}, {description: "Took a surfing lesson with friends. First time surfing and even stood up on the board a few times!"}, {posted_on: "03/22/2022"}, {place_id: 1}])
