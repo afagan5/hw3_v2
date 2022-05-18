@@ -4,7 +4,9 @@
 
 <ul>
   <% for post in @posts %>
-    <li><%= post["title"] %>, <%= post["description"] %>, <%= post["posted_on"] %></li>
+    <h3><%= post["title"] %></h3> 
+     <p><%= post["posted_on"] %></p>
+    <p><em><%= post["description"] %></em></p>
   <% end %>
 </ul>
 
@@ -14,3 +16,5 @@
 
 
 <p><a href="/places">Back to All Places</a></p>
+
+<p><%= button_to "Delete this Place", @place, method: :delete %></p>
